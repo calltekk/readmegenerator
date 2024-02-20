@@ -8,7 +8,7 @@ This README Generator is a command-line application designed to streamline the p
 - [Contributors](#contributors)
 - [Tests](#tests)
 - [Questions](#questions)
-- [Technologies used](#technologiesused)
+- [Technology](#technology)
 - [License](#license)
 
 ## Installation 
