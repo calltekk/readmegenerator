@@ -9,14 +9,11 @@ ${answers.description}
 
 ## Table of Contents
 - [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Credits](#credits)
-- [Contributing](#contributing)
+- [Contributors](#contributing)
 - [Tests](#tests)
-- [License](#license)
 - [Questions](#questions)
-- [Badges](#badges)
+- [Technologies used](#badges)
+- [License](#license)
 
 ## Installation 
 To install the necessary dependencies, run the following command: 
