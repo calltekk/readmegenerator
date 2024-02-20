@@ -5,14 +5,11 @@ This README Generator is a command-line application designed to streamline the p
 
 ## Table of Contents
 - [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Credits](#credits)
-- [Contributing](#contributing)
+- [Contributors](#contributors)
 - [Tests](#tests)
-- [License](#license)
 - [Questions](#questions)
 - [Badges](#badges)
+- [License](#license)
 
 ## Installation 
 1. To use my README Generator, firstly clone my repo to your device with running this command in your terminal:
