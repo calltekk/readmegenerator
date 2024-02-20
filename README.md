@@ -27,14 +27,10 @@ npm install
 ```
 node index.js
 ```
-4. You will then answer the questions prompted to you. After all is completed it will generate your README directly into the directory. Simply copy and paste the markdown into the the README for your desired project.
+4. You will then answer the questions prompted to you. After all is completed it will generate your README directly into the directory. Simply copy and paste the markdown into the README for your desired project.
 
 ## Usage
-undefined
-
-## License 
-This project is licensed under the MIT license.
-![MIT](https://img.shields.io/badge/license-MIT-white.svg)
+One needs Node.js installed on their device in order to use this application.
 
 ## Contributors
 Callum Hilton - @calltekk
@@ -56,3 +52,7 @@ If you have any questions about this project, please reach out:
 ![Git](https://img.shields.io/badge/git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![npm](https://img.shields.io/badge/npm-%23000000.svg?style=for-the-badge&logo=npm)
+
+## License 
+This project is licensed under the MIT license.
+![MIT](https://img.shields.io/badge/license-MIT-white.svg)
