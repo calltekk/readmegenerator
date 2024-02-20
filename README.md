@@ -42,7 +42,7 @@ npm test
 If you have any questions about this project, please reach out:
 - GitHub: [calltekk](https://github.com/calltekk)
 
-## Technologies used
+## Technology
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F.svg?style=for-the-badge&logo=node.js&logoColor=white)
 ![JSON](https://img.shields.io/badge/json-%23000000.svg?style=for-the-badge&logo=json&logoColor=%23F7DF1E)
