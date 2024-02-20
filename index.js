@@ -51,13 +51,13 @@ const questions = [
     type: "input",
     name: "dependencies",
     message: "What command should be run to install the dependencies?",
-    default: "`npm install`",
+    default: "`npm`",
   },
   {
     type: "input",
     name: "tests",
     message: "What command should be run to run tests?",
-    default: "`npm test`",
+    default: "`npm`",
   },
   {
     type: "input",
