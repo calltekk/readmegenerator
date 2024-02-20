@@ -9,12 +9,8 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // Function to validate user email address
-const validateEmail = (email) => {
-  if (emailValidator.validate(email)) {
-    return true;
-  } else {
-    return "Please enter a valid email address.";
-  }
+const isValidEmail = (email) => {
+  return emailValidator.validate(email) || "Please enter a valid email address.";
 };
 
 // Array of questions for user
@@ -22,13 +18,13 @@ const questions = [
   {
     type: "input",
     name: "username",
-    message: "Please enter your GitHub username",
+    message: "Please enter your GitHub username:",
   },
   {
     type: "input",
     name: "email",
-    message: "Please enter your email address",
-    validate: validateEmail,
+    message: "Please enter your email address:",
+    validate: isValidEmail,
   },
   {
     type: "input",
@@ -38,50 +34,29 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "Please write a short description of your project",
+    message: "Please write a short description of your project:",
   },
   {
     type: "list",
     name: "license",
-    message:
-      "Which license does your project use?",
+    message: "Which license does your project use?",
     choices: [
-      "Academic",
-      "Apache",
-      "Artistic",
-      "Boost-1.0",
-      "BSD-2-Clause",
-      "BSD_3_Clause",
-      "BSD_3_Clause_Clear",
-      "Creative",
-      "Creative_Attribution",
-      "Educational",
-      "Eclipse",
-      "GPL",
-      "LGPL",
-      "ISC",
-      "LaTeX",
-      "Microsoft",
-      "MIT",
-      "Mozilla",
-      "OSL",
-      "PostgreSQL",
-      "NCSA",
-      "Unlicense",
-      "zLib",
-      "None",
+      "Academic", "Apache", "Artistic", "Boost-1.0", "BSD-2-Clause", "BSD_3_Clause",
+      "BSD_3_Clause_Clear", "Creative", "Creative_Attribution", "Educational", "Eclipse",
+      "GPL", "LGPL", "ISC", "LaTeX", "Microsoft", "MIT", "Mozilla", "OSL", "PostgreSQL",
+      "NCSA", "Unlicense", "zLib", "None",
     ],
   },
   {
     type: "input",
     name: "dependencies",
-    message: "What command should be run to install the dependencies",
+    message: "What command should be run to install the dependencies?",
     default: "`npm i`",
   },
   {
     type: "input",
     name: "tests",
-    message: "What command should be run to run tests",
+    message: "What command should be run to run tests?",
     default: "`npm test`",
   },
   {
@@ -92,20 +67,18 @@ const questions = [
   {
     type: "input",
     name: "credits",
-    message:
-      "If you have collaborators, please list their GitHub usernames",
+    message: "If you have collaborators, please list their GitHub usernames:",
   },
   {
     type: "checkbox",
     name: "badges",
-    message:
-      "Please select which languages and tools you used to create this project.",
+    message: "Please select which languages and tools you used to create this project:",
     choices: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "NodeJS", "JSON", "Git", "GitHub", "npm", "React"],
   },
 ];
 
 // Function to prompt user
-const promptUser = () => {
+const promptUser = async () => {
   return inquirer.prompt(questions);
 };
 
@@ -115,17 +88,17 @@ const init = async () => {
     const answers = await promptUser();
     const markdown = generateMarkdown(answers);
 
-    if (!fs.existsSync(`generated`)) {
-      fs.mkdirSync(`generated`);
+    if (!fs.existsSync("generated")) {
+      fs.mkdirSync("generated");
     }
 
-   await writeFileAsync(path.join(`${process.cwd()}`, "README.md"), markdown);
+    await writeFileAsync(path.join(process.cwd(), "README.md"), markdown);
 
     console.info("Successfully wrote to README.md");
-  } catch (err) {
-    console.error(err);
+  } catch (error) {
+    console.error(error);
   }
 };
 
-// Function call to initialise program
+// Function call to initialize program
 init();
