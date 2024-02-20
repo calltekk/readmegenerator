@@ -62,7 +62,7 @@ const questions = [
   {
     type: "input",
     name: "contribution",
-    message: "What does the user need to know about contributions?",
+    message: "Are people allowed to contribute?",
   },
   {
     type: "input",

@@ -13,7 +13,7 @@ const badgeUrls = {
   GitHub: "github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white",
 };
 
-// Function to generate language badges based on user selection
+// Function to generate badge based on selection
 const generateBadge = (badge) =>
   `![${badge}](https://img.shields.io/badge/${badgeUrls[badge]})`;
 
@@ -25,7 +25,7 @@ const generateBadges = (selectedBadges) => {
   return badges;
 };
 
-// Function to generate license badge based on user selection
+// Function to generate license badge on selection
 const generateLicenseBadge = (license) => {
   if (license !== "None") {
     return `![${license}](https://img.shields.io/badge/license-${license}-white.svg)`;
