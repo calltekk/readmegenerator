@@ -1,7 +1,7 @@
 # Professional ReadMe Generator
 
 ## Description
-This is a professional README.md generator built with node
+This README Generator is a command-line application designed to streamline the process of creating professional and comprehensive README.md files for your GitHub projects. Powered by Node, this tool prompts users for project details, such as title, description, licensing, dependencies, and more. 
 
 ## Table of Contents
 - [Installation](#installation)
@@ -15,10 +15,19 @@ This is a professional README.md generator built with node
 - [Badges](#badges)
 
 ## Installation 
-To install the necessary dependencies, run the following command: 
+1. To use my README Generator, firstly clone my repo to your device with running this command in your terminal:
+```
+git clone git@github.com:calltekk/readmegenerator.git
+```
+2. Navigate to the directory location in your terminal and install it's depencies using the following command if you do not have Node already installed:
+```
+npm install
+```
+3. To then generate your desired README, navigate in VS Code to my index.js file, open VS Code's terminal and run the following command:
 ```
 node index.js
 ```
+4. You will then answer the questions prompted to you. After all is completed it will generate your README directly into the directory. Simply copy and paste the markdown into the the README for your desired project.
 
 ## Usage
 undefined
@@ -28,7 +37,7 @@ This project is licensed under the MIT license.
 ![MIT](https://img.shields.io/badge/license-MIT-white.svg)
 
 ## Contributors
-Nothing
+Callum Hilton - @calltekk
 
 ## Tests
 To run tests, use the following command: 
@@ -39,7 +48,6 @@ npm test
 ## Questions 
 If you have any questions about this project, please reach out:
 - GitHub: [calltekk](https://github.com/calltekk)
-- Email: callumgghilton@outlook.com
 
 ## Technologies used
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
