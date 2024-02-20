@@ -1,10 +1,7 @@
-# ReadMe Generator
-
-  ![MIT](https://img.shields.io/badge/license-MIT-white.svg)
-
+# Professional ReadMe Generator
 ## Description
 
-Professional readme generator
+It is a professional read me generator for my week 12 project
 
 ## Table of Contents
 
@@ -23,19 +20,21 @@ Professional readme generator
 
 To install the necessary dependencies, run the following command: 
 
-npm install 
+node index.js
 
 ## Usage
 
-anybody can use
+undefined
 
 ## License 
 
 This project is licensed under the MIT license.
 
-## Contributing
+![MIT](https://img.shields.io/badge/license-MIT-white.svg)
 
-anyone can contribute
+## Contributors
+
+Anybody can contribute. Always looking for people to pair program with
 
 ## Tests
 
@@ -47,13 +46,13 @@ npm test
 
 If you have any questions about this project, please reach out:
 - GitHub: https://github.com/calltekk
-- Email: callumgghiton@outlook.com
+- Email: callumgghilton@outlook.com
 
-## Badges
+## Technologies used
 
-![HTML](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![JSON](https://img.shields.io/badge/undefined)
+![Git](https://img.shields.io/badge/undefined)
+![GitHub](https://img.shields.io/badge/undefined)
+![npm](https://img.shields.io/badge/undefined)

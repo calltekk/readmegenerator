@@ -3,9 +3,6 @@ const { generateBadges, generateLicenseBadge } = require("./generateBadges");
 // Function to generate markdown for README
 const generateMarkdown = (answers) => {
   return `# ${answers.project}
-
-  ${generateLicenseBadge(answers.license)}
-
 ## Description
 
 ${answers.description}
@@ -36,6 +33,8 @@ ${answers.usage}
 ## License 
 
 This project is licensed under the ${answers.license} license.
+
+${generateLicenseBadge(answers.license)}
 
 ## Contributors
 
