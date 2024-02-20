@@ -37,7 +37,7 @@ ${answers.usage}
 
 This project is licensed under the ${answers.license} license.
 
-## Contributing
+## Contributors
 
 ${answers.contribution}
 
@@ -53,7 +53,7 @@ If you have any questions about this project, please reach out:
 - GitHub: https://github.com/${answers.username}
 - Email: ${answers.email}
 
-## Badges
+## Technologies used
 
 ${generateBadges(answers.badges)}`;
 };

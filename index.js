@@ -22,29 +22,29 @@ const questions = [
   {
     type: "input",
     name: "username",
-    message: "What is your GitHub username?",
+    message: "Please enter your GitHub username",
   },
   {
     type: "input",
     name: "email",
-    message: "What is your email address?",
+    message: "Please enter your email address",
     validate: validateEmail,
   },
   {
     type: "input",
     name: "project",
-    message: "What is your project's name?",
+    message: "What is the title of your project?",
   },
   {
     type: "input",
     name: "description",
-    message: "Please write a short description of your project.",
+    message: "Please write a short description of your project",
   },
   {
     type: "list",
     name: "license",
     message:
-      "What kind of license should your project have? Please pick one of the licenses from the list or select None if you would like no licence.",
+      "Which license does your project use?",
     choices: [
       "Academic",
       "Apache",
@@ -75,7 +75,7 @@ const questions = [
   {
     type: "input",
     name: "dependencies",
-    message: "What command should be run to install dependencies",
+    message: "What command should be run to install the dependencies",
     default: "`npm i`",
   },
   {
@@ -86,11 +86,6 @@ const questions = [
   },
   {
     type: "input",
-    name: "usage",
-    message: "What does the user need to know about using the repo?",
-  },
-  {
-    type: "input",
     name: "contribution",
     message: "What does the user need to know about contributing to the repo?",
   },
@@ -98,14 +93,14 @@ const questions = [
     type: "input",
     name: "credits",
     message:
-      "List your collaborators, if any, with links to their GitHub profiles.",
+      "If you have collaborators, please list their GitHub usernames",
   },
   {
     type: "checkbox",
     name: "badges",
     message:
       "Please select which languages and tools you used to create this project.",
-    choices: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "NodeJS"],
+    choices: ["HTML", "CSS", "Bootstrap", "JavaScript", "jQuery", "NodeJS", "JSON", "Git", "GitHub", "npm", "React"],
   },
 ];
 
@@ -114,7 +109,7 @@ const promptUser = () => {
   return inquirer.prompt(questions);
 };
 
-// Function to write to README
+// Function to generate README.md
 const init = async () => {
   try {
     const answers = await promptUser();
@@ -132,5 +127,5 @@ const init = async () => {
   }
 };
 
-// Function call to initialize program
+// Function call to initialise program
 init();
