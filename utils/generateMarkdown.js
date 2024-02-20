@@ -24,9 +24,6 @@ To install the necessary dependencies, run the following command:
 ${answers.dependencies}
 \`\`\`
 
-## Usage
-${answers.usage}
-
 ## Contributors
 ${answers.contribution}
 
