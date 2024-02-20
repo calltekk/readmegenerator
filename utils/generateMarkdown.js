@@ -35,7 +35,7 @@ If you run into any issues about this project, please reach out to me at:
 - GitHub: [${answers.username}](https://github.com/${answers.username})
 - Email: ${answers.email}
 
-## Technologies used
+## Technology
 ${generateBadges(answers.badges)}
 
 ## License
