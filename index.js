@@ -51,7 +51,7 @@ const questions = [
     type: "input",
     name: "dependencies",
     message: "What command should be run to install the dependencies?",
-    default: "`npm i`",
+    default: "`npm install`",
   },
   {
     type: "input",
@@ -62,7 +62,7 @@ const questions = [
   {
     type: "input",
     name: "contribution",
-    message: "What does the user need to know about contributing to the repo?",
+    message: "What does the user need to know about contributions?",
   },
   {
     type: "input",
@@ -100,5 +100,5 @@ const init = async () => {
   }
 };
 
-// Function call to initialize program
+// Function call to initialise program
 init();
