@@ -124,10 +124,7 @@ const init = async () => {
       fs.mkdirSync(`generated`);
     }
 
-    await writeFileAsync(
-      path.join(`${process.cwd()}/generated/`, "README.md"),
-      markdown
-    );
+   await writeFileAsync(path.join(`${process.cwd()}`, "README.md"), markdown);
 
     console.info("Successfully wrote to README.md");
   } catch (err) {
