@@ -12,7 +12,7 @@ ${answers.description}
 - [Contributors](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
-- [Technologies used](#technologies used)
+- [Technology](#technology)
 - [License](#license)
 
 ## Installation 
