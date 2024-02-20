@@ -1,8 +1,11 @@
 # Professional ReadMe Generator
+![Screenshot 2024-02-20 at 23 39 03](https://github.com/calltekk/readmegenerator/assets/112567796/e555d37c-10c2-405f-bd41-866abe4eedf4)
 
 ## Description
 This README Generator is a command-line application designed to streamline the process of creating professional and comprehensive README.md files for your GitHub projects. Powered by Node, this tool prompts users for project details, such as title, description, licensing, dependencies, and more. 
 
+## Video
+A video of my application in use can be viewed here: [https://drive.google.com/file/d/1UOHoZ5z4KYrLwczZjb_VbMcNNJN9Ohxm/view]
 ## Table of Contents
 - [Installation](#installation)
 - [Contributors](#contributors)
